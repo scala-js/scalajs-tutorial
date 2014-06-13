@@ -1,5 +1,7 @@
 package tutorial.webapp
 
+import scala.scalajs.js.annotation.JSExportTopLevel
+
 import org.scalajs.dom
 import org.scalajs.dom.document
 
@@ -13,5 +15,10 @@ object TutorialApp {
     val textNode = document.createTextNode(text)
     parNode.appendChild(textNode)
     targetNode.appendChild(parNode)
+  }
+
+  @JSExportTopLevel("addClickedMessage")
+  def addClickedMessage(): Unit = {
+    appendPar(document.body, "You clicked the button!")
   }
 }
