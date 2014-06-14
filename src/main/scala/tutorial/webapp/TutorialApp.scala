@@ -8,8 +8,10 @@ object TutorialApp {
   }
 
   def setupUI(): Unit = {
+    jQuery("""<button type="button">Click me!</button>""")
+      .click(() => addClickedMessage())
+      .appendTo(jQuery("body"))
     jQuery("body").append("<p>Hello World</p>")
-    jQuery("#click-me-button").click(() => addClickedMessage())
   }
 
   def addClickedMessage(): Unit = {
