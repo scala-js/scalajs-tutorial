@@ -5,10 +5,12 @@
     <title>The Scala.js Tutorial</title>
   </head>
   <body>
-    <button id="click-me-button" type="button" onclick="addClickedMessage()">
+    <button id="click-me-button" type="button">
       Click me!
     </button>
 
+    <!-- Include JavaScript dependencies -->
+    <script type="text/javascript" src="./target/scala-2.13/scala-js-tutorial-jsdeps.js"></script>
     <!-- Include Scala.js compiled code -->
     <script type="text/javascript" src="./target/scala-2.13/scala-js-tutorial-fastopt.js"></script>
   </body>
