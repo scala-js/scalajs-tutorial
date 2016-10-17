@@ -13,6 +13,9 @@ jsDependencies +=
 
 jsDependencies += RuntimeDOM
 
+// ScalaTest settings
+libraryDependencies += "org.scalatest" %%% "scalatest" % "3.0.0" % "test"
+
 // uTest settings
 libraryDependencies += "com.lihaoyi" %%% "utest" % "0.3.0" % "test"
 testFrameworks += new TestFramework("utest.runner.Framework")
