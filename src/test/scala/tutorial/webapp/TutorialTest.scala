@@ -8,7 +8,7 @@ import org.scalajs.dom
 import org.scalajs.dom.document
 import org.scalajs.dom.ext._
 
-object TutorialTest extends TestSuite {
+object TutorialTest extends TestSuite:
 
   // Initialize App
   TutorialApp.setupUI()
@@ -32,4 +32,4 @@ object TutorialTest extends TestSuite {
       }
     }
   }
-}
+
